@@ -1,1 +1,9 @@
-# 수정하기
+// 240305
+
+# include <stdio.h>
+
+void main(){
+    printf("hello world");
+
+    return 0;
+}
