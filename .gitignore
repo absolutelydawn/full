@@ -11,4 +11,4 @@ c/**/*
 !/c/**/lib/*.h
 
 # Makefile
-!c/**/Makefile
+!c/**/Makefile.*
