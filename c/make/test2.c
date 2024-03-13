@@ -3,5 +3,5 @@
 #include "b.h"
 
 extern void func1(){
-    printf("Test2\n");
+    printf("Test2~!!\n");
 }
