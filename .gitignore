@@ -30,6 +30,7 @@ maven/**/target
 ## nodejs
 node/**/node_modules
 node/**/package-lock.json
+node_modules
 
 ## python venv
 python/**/.venv
