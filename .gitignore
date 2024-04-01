@@ -1,0 +1,31 @@
+## .env
+.env
+
+## c
+c/*
+c/*.o
+c/**/*
+!c/**/
+!c/**/*.c
+!c/**/lib/
+!c/**/lib/*.h
+!c/**/Makefile
+!c/**/Makefile.*
+
+## java
+**/*.class
+
+## scala
+scala/**/project
+scala/**/target
+
+## maven
+maven/**/target
+
+## nodejs
+node/**/node_modules
+node/**/package-lock.json
+
+## python venv 
+python/**/.venv
+python/**/__pycache__/

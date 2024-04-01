@@ -1,0 +1,11 @@
+MongoDB shell version v4.4.29
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("72c08fee-9db6-464b-aa31-5797172b4680") }
+MongoDB server version: 4.4.29
+---
+The server generated these startup warnings when booting: 
+        2024-03-27T11:38:33.635+09:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+        2024-03-27T11:38:34.352+09:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+> [3G[J[3G^C
+bye

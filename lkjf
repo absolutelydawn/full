@@ -1,0 +1,221 @@
+[33mcommit ef580f199522304c15710b082c7fda43ab1897f6[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: impelfin <jw97.park@gmail.com>
+Date:   Mon Apr 1 15:44:50 2024 +0900
+
+    app.js_나중에수정
+
+[33mcommit b7473f38fee0cf973a3c24cc44370901a952127f[m
+Author: impelfin <jw97.park@gmail.com>
+Date:   Wed Mar 27 17:05:21 2024 +0900
+
+    mongodb
+
+[33mcommit 7c16c875c0b1bd44e3ddb22e90aa7cb05293bf88[m
+Author: impelfin <jw97.park@gmail.com>
+Date:   Wed Mar 27 14:34:50 2024 +0900
+
+    mongodb
+
+[33mcommit b872f3fa6538af4f5b801a4b354f6f25b826d1bb[m
+Author: impelfin <jw97.park@gmail.com>
+Date:   Tue Mar 26 17:03:56 2024 +0900
+
+    mongodbs
+
+[33mcommit 1832ddae218ec25d44bd574766b9ac06ebd70ab8[m
+Author: impelfin <jw97.park@gmail.com>
+Date:   Tue Mar 26 17:02:51 2024 +0900
+
+    mongodb querys
+
+[33mcommit 6b4fa9272f1bf07867cb09fcfad6920c70fe90ec[m
+Author: impelfin <jw97.park@gmail.com>
+Date:   Tue Mar 26 14:22:54 2024 +0900
+
+    ruby
+
+[33mcommit 2e5c64748464c4c6fe61b31511935719898f938e[m
+Author: impelfin <jw97.park@gmail.com>
+Date:   Mon Mar 25 18:03:12 2024 +0900
+
+    atlas api test
+
+[33mcommit 7fa78c8e98560c7ebe0bc891c2be70fe260e8926[m
+Author: daniyyelpark <jw97.park@gmail.com>
+Date:   Mon Mar 25 17:56:45 2024 +0900
+
+    gitignore
+
+[33mcommit d6c7c0cdf394cfa2eb05af0c655d5b0c435d27c9[m
+Author: impelfin <jw97.park@gmail.com>
+Date:   Mon Mar 25 15:06:13 2024 +0900
+
+    hello.py
+
+[33mcommit 0536aa47697c1277ad90e7985cd89ed404219e29[m
+Author: impelfin <jw97.park@gmail.com>
+Date:   Mon Mar 25 14:43:48 2024 +0900
+
+    node js
+
+[33mcommit 344441eafb885fdb26369c2dc86629643d0c98c9[m
+Author: daniyyelpark <jw97.park@gmail.com>
+Date:   Mon Mar 25 14:20:03 2024 +0900
+
+    pompom
+
+[33mcommit a5b2600a0f47bfb0a1a1a0ae76d05df7b799a6b5[m
+Author: daniyyelpark <jw97.park@gmail.com>
+Date:   Mon Mar 25 11:54:55 2024 +0900
+
+    pom
+
+[33mcommit aded8bcf3481ac7412a586b928af840c0adf021f[m
+Author: daniyyelpark <jw97.park@gmail.com>
+Date:   Mon Mar 25 11:53:46 2024 +0900
+
+    pom
+
+[33mcommit 41eedef5dcbbb470ed306aa8545a95afeb1fef20[m
+Author: daniyyelpark <jw97.park@gmail.com>
+Date:   Mon Mar 25 11:23:30 2024 +0900
+
+    sbt scala
+
+[33mcommit c6d16b15e563f029abcec2696cfd1839c238278a[m
+Author: daniyyelpark <jw97.park@gmail.com>
+Date:   Fri Mar 22 11:57:50 2024 +0900
+
+    oracle blob load
+
+[33mcommit 730b557bac99a2fd4de0da0fe3334dffa42d0596[m
+Author: daniyyelpark <jw97.park@gmail.com>
+Date:   Thu Mar 21 17:52:11 2024 +0900
+
+    Create CentOs_HR~1.sql
+
+[33mcommit 7f84c9d37376e4d6fd313aae0a12edc05e96630d[m
+Author: daniyyelpark <jw97.park@gmail.com>
+Date:   Thu Mar 21 11:53:50 2024 +0900
+
+    Create SHOP_Membertbl.ddl.sql
+
+[33mcommit 1517d21d11541ef320d2b3ee8bf69a519155f96c[m
+Author: daniyyelpark <jw97.park@gmail.com>
+Date:   Thu Mar 21 11:22:52 2024 +0900
+
+    shop
+
+[33mcommit 8b57b587b076b47339d194cad95ea7d35e49fab5[m
+Author: daniyyelpark <jw97.park@gmail.com>
+Date:   Wed Mar 20 14:58:28 2024 +0900
+
+    makefile
+
+[33mcommit 136ff710ab0fb8a0fb436f7a7a6adbc2f9d2deb7[m
+Author: daniyyelpark <jw97.park@gmail.com>
+Date:   Tue Mar 19 13:50:49 2024 +0900
+
+    dbtest
+
+[33mcommit 811963b4c86104ff3fc0b5a64c72d07c5502a09a[m
+Author: impelfin <jw97.park@gmail.com>
+Date:   Tue Mar 19 13:49:04 2024 +0900
+
+    db change
+
+[33mcommit 76a64acdca886d5c436d7023f535fcba7bcf503b[m
+Author: daniyyelpark <jw97.park@gmail.com>
+Date:   Mon Mar 18 17:15:34 2024 +0900
+
+    index.html
+
+[33mcommit 02377f7c4c652bad410824f367634a79aed11af7[m
+Author: daniyyelpark <jw97.park@gmail.com>
+Date:   Mon Mar 18 15:59:30 2024 +0900
+
+    gradesql
+
+[33mcommit c80006ac2878d7576e0b32e1874c7227011d5d01[m
+Author: impelfin <jw97.park@gmail.com>
+Date:   Mon Mar 18 15:56:21 2024 +0900
+
+    Shells
+
+[33mcommit a0e7fe4ed207ca0d3de9481bf108d5954c87e028[m
+Author: impelfin <jw97.park@gmail.com>
+Date:   Fri Mar 15 17:28:59 2024 +0900
+
+    userdel
+
+[33mcommit d15302e2777a66b1bd9f236dc67580bcfc2c97b0[m
+Author: impelfin <jw97.park@gmail.com>
+Date:   Fri Mar 15 15:20:10 2024 +0900
+
+    readfile
+
+[33mcommit cfe09c0ee8a1eee8af452bbcaa4bb6ffd3c8fdca[m
+Author: impelfin <jw97.park@gmail.com>
+Date:   Fri Mar 15 15:20:00 2024 +0900
+
+    readfile
+
+[33mcommit b20c43f561aa3d1806514a07d2d3ec70aea10426[m
+Author: impelfin <jw97.park@gmail.com>
+Date:   Fri Mar 15 15:03:34 2024 +0900
+
+    shell2
+
+[33mcommit 8d0b32ea4aeb072a166bf6b613720dfaa0de3e61[m
+Author: impelfin <jw97.park@gmail.com>
+Date:   Fri Mar 15 12:16:05 2024 +0900
+
+    Shell Script
+
+[33mcommit 7394c5f867852230193fd3a5ed5e937034953464[m
+Author: daniyyelpark <jw97.park@gmail.com>
+Date:   Thu Mar 14 11:10:15 2024 +0900
+
+    prime number
+
+[33mcommit 57deac6cf06f4c6021a14da27c1550c1cd23cc6b[m
+Author: impelfin <jw97.park@gmail.com>
+Date:   Thu Mar 14 09:54:15 2024 +0900
+
+    .gitignore
+
+[33mcommit e51b2c4bae79f568b32909ad20c13f192809457d[m
+Author: impelfin <jw97.park@gmail.com>
+Date:   Thu Mar 14 09:45:01 2024 +0900
+
+    java
+
+[33mcommit 789f07a0f60ebbadcd02127e36ea14af0ef78307[m
+Author: impelfin <jw97.park@gmail.com>
+Date:   Wed Mar 13 15:35:21 2024 +0900
+
+    last Makefile
+
+[33mcommit 708df63d3101c4e0639e89bb9cae7de62958cd59[m
+Author: impelfin <jw97.park@gmail.com>
+Date:   Tue Mar 12 17:18:27 2024 +0900
+
+    library
+
+[33mcommit a1379da24cb0daf58c004a154596320fbdef9e4b[m
+Author: daniyyelpark <jw97.park@gmail.com>
+Date:   Thu Mar 7 15:32:35 2024 +0900
+
+    work.sh
+
+[33mcommit f0fcabcf9a5ca9a3a51cc263b3c1a51e535eb589[m
+Author: daniyyelpark <jw97.park@gmail.com>
+Date:   Wed Mar 6 12:07:46 2024 +0900
+
+    eod
+
+[33mcommit 15eb30039e28e17b79d00284f395d0ed65f82329[m
+Author: daniyyelpark <jw97.park@gmail.com>
+Date:   Wed Mar 6 10:00:42 2024 +0900
+
+    upload
