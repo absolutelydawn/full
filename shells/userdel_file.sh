@@ -4,10 +4,11 @@ input="user.dat"
 
 while IFS=',' read -r username uid gid comment
 do
-	userdel -r "$username"
+	userdel "$username"
 	rm -rf /home/$username
+	rm -rf /var/mail/$username
 	echo "Delete $username"
-done< $input
+done < $input
 
 echo
 tail -3 /etc/passwd

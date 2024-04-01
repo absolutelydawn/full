@@ -1,6 +1,6 @@
 #!/bin/bash
 
-odir1=$1
+dir1=$1
 dir2=$2
 
 ( cd $dir1; find . -maxdepth 1 -type f -print | sort ) > dir1-file.lst

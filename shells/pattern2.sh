@@ -2,4 +2,3 @@
 
 str="AAABBBCCC"
 echo "${str##A*B}"
-

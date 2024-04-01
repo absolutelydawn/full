@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-set -- $(getopt -q u:g:c:d:s:k:m "$@")
+set -- $(getopt -q u:g:c:s:k:m "$@")
 #
 echo
 while [ -n "$1" ]
@@ -11,9 +11,6 @@ do
 			shift ;;
 		-g) param="$2"
 			echo "-g (gid) option, parameter value : $param"
-			shift ;;
-		-c) param="$2"
-			echo "-c (comment) option, parameter value : $param"
 			shift ;;
 		-d) param="$2"
 			echo "-d (home directory) option, parameter value : $param"
@@ -26,7 +23,7 @@ do
 			shift ;;
 		-m) echo "-m (make home directory) option" ;;
 		--) shift
-	   	    break ;;
+			break ;;
 		*) echo "$1 is not an option" ;;
 	esac
 	shift
@@ -34,7 +31,7 @@ done
 #
 count=1
 for param in "$@"
-do 
+do
 	echo "Parameter #$count : $param"
 	count=$[ $count + 1 ]
 done
