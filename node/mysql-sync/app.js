@@ -9,6 +9,7 @@ var connection = new mysql({
     database: process.env.database
 });
 
+// select from st_info table
 let result = connection.query('select * from st_info');
 console.log(result);
 
