@@ -18,7 +18,7 @@ var connection = new mysql({
     database: process.env.database
 });
 
-app.get('/Hello', (req,res) => {
+app.get('/Hello', (req, res) => {
     res.send("Hello World")
 })
 
@@ -26,13 +26,13 @@ app.get('/Hello', (req,res) => {
 app.get('/select', (req, res) => {
     const result = connection.query("select * from st_info")
     console.log(result);
+    // res.send(result);
     res.writeHead(200);
-    var template =  
-    `
-    <!DOCTYPE html>
+    var template = `
+    <!Doctype html>
     <html>
         <head>
-            <meta charset="utf-8>
+            <meta charset="utf-8">
             <title>Result</title>
         </head>
         <body>
@@ -43,21 +43,21 @@ app.get('/select', (req, res) => {
                 <th>DEPT</th>
             </tr>
             `;
-        for (var i=0; i<result.length; i++) {
-            template +=`
+    for (var i = 0; i < result.length; i++) {
+        template += `
             <tr>
                 <th>${result[i]['ST_ID']}</th>
                 <th>${result[i]['NAME']}</th>
                 <th>${result[i]['DEPT']}</th>
             </tr>
             `
-        }
-        template += `
-        </table>
-    </body>
-</html>
-`;
-res.end(template);
+    }
+    template += `
+            </table>
+        </body>
+    </html>
+    `;
+    res.end(template);
 })
 
 // insert data into st_info table
@@ -77,7 +77,6 @@ app.get('/update', (req, res) => {
     )
     res.redirect('/select');
 })
-
 
 // delete row from st_info table
 app.get('/delete', (req, res) => {
