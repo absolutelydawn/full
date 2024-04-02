@@ -27,7 +27,7 @@ const db = async () => {
         let insertId = data.st_id;
 
         //insert query
-        let [results] = await connection.query("insert into st_info set ?", data);
+        [rows, fields] = await connection.query("insert into st_info set ?", data);
         console.log("\nData is inserted~!!");
 
         // select * query for inserted data
