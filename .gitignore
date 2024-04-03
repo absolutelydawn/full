@@ -25,6 +25,7 @@ maven/**/target
 ## nodejs
 node/**/node_modules
 node/**/package-lock.json
+node/conf/*
 
 ## python venv 
 python/**/.venv
