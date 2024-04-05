@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>*출력</title>
+</head>
+<body>
+    <h3>*출력</h3>
+    <hr />
+    <script>
+        let n = 5; // 라인 수 정하기
+
+        for (let i=0;i<n;i++){
+            for(let j=0;j<i;j++) document.write("&nbsp;");
+            for(j=0;j<(n*2)-(i*2+1);j++) document.write("*");
+            document.write("<br>");
+        }
+        for (i=0; i<n; i++){
+            for(j=0; j<n-1-i;j++)document.write("&nbsp;");
+            for(j=0;j<i*2+1;j++)document.write("*");
+            document.write("<br>");
+        }
+
+
+    </script>
+</body>
+</html>
