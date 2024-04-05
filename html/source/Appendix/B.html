@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>2차원 배열</title>
+</head>
+<body>
+<h3>2차원 배열</h3>
+<hr>
+<script>
+
+// rows x cols의 2차원 배열 생성하여 리턴. 원소는 모두 비어 있음
+function make2DArray(rows, cols) {
+	let array2D = new Array(rows);
+	for(let i=0; i<array2D.length; i++) {
+		array2D[i] = new Array(cols);
+	}
+	return array2D; // 2차원 배열의 레퍼런스 리턴
+}
+
+// 매개변수로 넘어온 2차원 배열 출력
+function print2DArray(array2D) {
+	for(let i=0; i<array2D.length; i++) {
+		for(let j=0; j<array2D[i].length; j++) {
+			document.write(array2D[i][j] + " ");
+		}
+		document.write("<br>");
+	}
+}
+
+let array2D = [ [1,2], [3,4], [5,6] ]; // 초기값으로 3x2 배열 만들기
+print2DArray(array2D); // array2D의 화면 출력
+
+let word2D = make2DArray(3, 2); // 3x2 배열 만들기
+word2D[0][0] = "사과";
+word2D[0][1] = "apple";
+word2D[1][0] = "바나나";
+word2D[1][1] = "banana";
+word2D[2][0] = "체리";
+word2D[2][1] = "cherry";
+print2DArray(word2D); // word2D의 화면 출력
+
+</script>
+</body>
+</html>
