@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Login</h3>
+    <hr />
+    <form action="/login" method="post" name="userForm" target="targetURL">
+        <p>Userid &nbsp;<input type="text" name="id" size=10></p>
+        <p>Password <input type="password" name="pw" size=10></p>
+        <!--로그인버튼-->
+        <input type="submit" value="로그인" onclick='document.targetURL.location.href="/login"' />&nbsp;&nbsp;
+        <!--취소버튼-->
+        <input type="reset" value="취소" />
+
+        <!--href 회원가입-->
+    </form>
+    <br>
+    <a href="/">회원가입</a>
+
+</body>
+</html>
