@@ -2,14 +2,14 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>member</title>
+        <title>User Authentication</title>
     </head>
     <body>
-        <h1>member</h1>
-        <hr />
+        <h1>User Authentication</h1>
+        <hr /> 
         <form action="/insert" method="post" name="userForm" target="targetURL">
             <p>Userid &nbsp;<input type="text" name="id" size=10></p>
-            <p>Password <input type="password" name="pw" size=10></p>
+            <p>Password  <input type="password" name="pw" size=10></p>
             <input type="button" value="get select" onclick='document.targetURL.location.href="/select"' />&nbsp;&nbsp;
             <input type="button" value="get selectQuery" onclick='document.targetURL.location.href="/selectQuery?id="+document.userForm.id.value' />&nbsp;&nbsp;
             <input type="submit" value="post Insert" />&nbsp;&nbsp;
@@ -18,8 +18,7 @@
             <p />
         </form>
         <hr />
-        <iframe name="targetURL" class="iframe-preview center" width="90%" height="500"
-        style="border:none" src="http://192.168.1.162:8000/Hello">
+        <iframe name="targetURL" class="iframe-preview center" width="90%" height="500" style="border:none" src="http://192.168.1.53:8000/Hello">
         </iframe>
     </body>
 </html>
