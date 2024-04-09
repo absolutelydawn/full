@@ -3,11 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>User Authentication</title>
+        <link type="text/css" rel="stylesheet" href="mystyle.css" />
     </head>
     <body>
-        <h1>User Authentication</h1>
+        <h3>User Authentication</h3>
         <hr />
         <form action="/insert" method="post" name="userForm" target="targetURL">
+            <div class="box">
             <p>Userid &nbsp;<input type="text" name="id" size=10></p>
             <p>Password <input type="password" name="pw" size=10></p>
             <input type="button" value="get select" onclick='document.targetURL.location.href="/select"' />&nbsp;&nbsp;
@@ -21,5 +23,6 @@
         <iframe name="targetURL" class="iframe-preview center" width="90%" height="500"
         style="border:none" src="http://192.168.1.162:8000/Hello">
         </iframe>
+    </div>
     </body>
 </html>
