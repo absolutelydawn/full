@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2d5385896931014cca71de18dee56363 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2d5385896931014cca71de18dee56363" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2d5385896931014cca71de18dee56363 = L.map(
+                "map_2d5385896931014cca71de18dee56363",
+                {
+                    center: [37.4946203470469, 127.027606136235],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5e97f3241f0ee696aa0c1e66365fccae = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_5e97f3241f0ee696aa0c1e66365fccae.addTo(map_2d5385896931014cca71de18dee56363);
+        
+    
+            var marker_36501480aafdc9b87bba0e2b9eac5659 = L.marker(
+                [37.4946203470469, 127.027606136235],
+                {}
+            ).addTo(map_2d5385896931014cca71de18dee56363);
+        
+    
+            var icon_fff90445829e37fd5aebeba0390cbc78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_36501480aafdc9b87bba0e2b9eac5659.setIcon(icon_fff90445829e37fd5aebeba0390cbc78);
+        
+    
+        var popup_4733566b15c8650f37983901400bdd31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5ab5f8771f669742e36bc4179366d9a = $(`<div id="html_d5ab5f8771f669742e36bc4179366d9a" style="width: 100.0%; height: 100.0%;">비트빌</div>`)[0];
+                popup_4733566b15c8650f37983901400bdd31.setContent(html_d5ab5f8771f669742e36bc4179366d9a);
+            
+        
+
+        marker_36501480aafdc9b87bba0e2b9eac5659.bindPopup(popup_4733566b15c8650f37983901400bdd31)
+        ;
+
+        
+    
+    
+            var circle_marker_c3418a35124ce87fbbd6fc90b30bdb5c = L.circleMarker(
+                [37.4946203470469, 127.027606136235],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(map_2d5385896931014cca71de18dee56363);
+        
+    
+        var popup_419f662bce8ef76fb3b3ab20257e184b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55ace766e1f74db69ec6623880025923 = $(`<div id="html_55ace766e1f74db69ec6623880025923" style="width: 100.0%; height: 100.0%;">비트빌</div>`)[0];
+                popup_419f662bce8ef76fb3b3ab20257e184b.setContent(html_55ace766e1f74db69ec6623880025923);
+            
+        
+
+        circle_marker_c3418a35124ce87fbbd6fc90b30bdb5c.bindPopup(popup_419f662bce8ef76fb3b3ab20257e184b)
+        ;
+
+        
+    
+</script>
+</html>
