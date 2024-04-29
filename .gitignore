@@ -23,12 +23,14 @@ scala/**/target
 maven/**/target
 
 ## nodejs
-node/**/node_modules
-node/**/package-lock.json
-node/conf/*
-node/conf/pool.js
+**/node_modules
+**/package-lock.json
+conf/*
+conf/pool.js
 
 ## python venv 
-python/**/.venv
-python/**/__pycache__/
-python/secret.json
+**/.venv
+**/__pycache__/
+**/secret.json
+
+**/chromedriver
