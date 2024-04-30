@@ -1,20 +1,17 @@
 #!/usr/bin/env python
 ###
 # mongoDB에 입력된 리뷰 받아서 서버에 띄우기 :
-# mongoDB에 수집된 리뷰내용  FastAPI서버에서 출력하기
-# myscript.sh로 스크래핑 파일 실행 > mongoDB에 담은 뒤 리뷰내용 조회가능ㄴ
+# scraping 파일 모듈화하여 수집된 리뷰내용 FastAPI 서버에서 출력가능
 # 작성자명 : 장다은
-# 작성일자 : 240426
-# 기타사항 : 
-# 개선 ) 리뷰내용 조회 시 개선사항 _ productId 있는데 리뷰 없는 경우 / productId가 잘못된 경우 고려
-#        리뷰내용 파싱 추가 : rank(별점), date(작성일자)   
+# 작성일자 : 240430
 ###
+
 from fastapi import FastAPI, HTTPException, Query, Body
 from pymongo import MongoClient
 from pydantic import BaseModel
-from bson import ObjectId
 import os
 import subprocess
+from scraping_reviews import collectReviews
 
 app = FastAPI()
 
@@ -25,32 +22,41 @@ reviews_collection = db['reviews']
 class Product(BaseModel):
     product_id: str
 
-# main page(추후수정)
 @app.get('/', status_code=200)
 async def hello():
-    return "OK"
+    return {"message": "OK"}
 
-# productId를 검색하여 리뷰 내용 출력
-# (추후 개선하기) productId는 있는데 리뷰가 없는 경우 / productId가 잘못된 경우 고려하기
 @app.get("/reviews", description="리뷰 결과 조회 API입니다.", status_code=201)
-async def getReviews(product_id: str = Query(None, alias="productId")):
-    # productId가 입력되지 않은 경우
+async def get_reviews(product_id: str = Query(None, alias="productId")):
     if product_id is None:
         return {"message": "productId가 입력되지 않았습니다. productId를 입력하세요."}
-    
-    # MongoDB에서 productId에 해당하는 리뷰 찾기
+
+    # 상품 존재 여부 확인
+    product_exists = reviews_collection.count_documents({"productId": product_id})
+    if product_exists == 0:
+        # 상품이 존재하지 않으면 바로 스크래핑 실행
+        scraping_result = collectReviews(product_id)
+        if scraping_result:
+            return {"message": "Product ID received and scraping code is done", "reviews": scraping_result}
+        else:
+            return {"message": "스크래핑은 성공했지만 리뷰를 찾을 수 없습니다."}
+
+    # 리뷰 조회
     cursor = reviews_collection.find({"productId": product_id}, {"_id": 0})
     reviews = list(cursor)
     if reviews:
-        return reviews
-    else: # 리뷰가 없다면
-        return {"message": "리뷰 검색 결과가 없습니다."}
-    
-# selenium파일에 인자값(productId) 전달하기
+        return reviews  # 리뷰가 있으면 그대로 반환
+    else:
+        return {"message": "리뷰 검색 결과가 없습니다."}  # 리뷰가 없으면 메세지 반환
+
 @app.post("/submit_product")
 async def submit_product(product: Product):
     with open("product_id.txt", "w") as file:
         file.write(product.product_id)
-    
-    subprocess.run(["./myscript.sh"], check=True)
-    return {"message": "Product ID received and executed the scraping script."}
+
+    # 스크래핑 실행
+    scraping_result = collectReviews(product.product_id)
+    if scraping_result:
+        return {"message": "Product ID received and executed the scraping script.", "reviews": scraping_result}
+    else:
+        return {"message": "스크래핑은 성공했지만 리뷰를 찾을 수 없습니다."}
