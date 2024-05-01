@@ -8,7 +8,7 @@
 # contents : 글자수 50자 이상, date : 작성일자, rank : 평점
 # 50자 이상 리뷰 수집 에러 수정, 페이지 버튼 클릭 로직 수정
 # 페이지탐색 최대 10페이지로 제한
-
+# productId 수집 빠진거 다시 수정
 # 개선사항 : coding convention 준수하기
 ###
 
@@ -64,6 +64,7 @@ def collectReviews(product_id):
 
                     if len(contents) >= 50:
                         reviews_collected.append({
+                            "productId" : product_id,
                             "contents": contents,
                             "date": date,
                             "rank": rank
