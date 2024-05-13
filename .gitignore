@@ -34,3 +34,8 @@ conf/pool.js
 **/secret.json
 
 **/chromedriver
+
+## aws
+.c9
+
+**/uploadedFiles
