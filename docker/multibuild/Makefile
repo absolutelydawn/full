@@ -1,14 +1,10 @@
 build:
-	docker build -t myreact .
+	docker build -t greet .
 run:
-	docker run -it -p 8000:80 myreact
-exec:
-	docker exec -it myreact /bin/bash
+	docker run -it --rm greet asa
 ps:
 	docker ps -a
-img:
+img:	
 	docker images
-rm:
-	docker rm -f $$(docker ps -aq)
 rmi:
 	docker rmi -f $$(docker images -q)
