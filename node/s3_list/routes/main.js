@@ -5,6 +5,9 @@ const fs = require('fs');
 const path = require('path');
 const env = require('dotenv').config({ path: '../../.env' });
 
+//console.log('Access Key ID:', process.env.ID);  // 추가: 환경 변수가 제대로 로드되었는지 확인
+//console.log('Secret Access Key:', process.env.SECRET);  // 추가: 환경 변수가 제대로 로드되었는지 확인
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
@@ -13,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 const AWS = require('aws-sdk');
 const ID = process.env.ID;
 const SECRET = process.env.SECRET;
-const BUCKET_NAME = 'kibwa00';
+const BUCKET_NAME = 'kibwa15';
 const MYREGION = 'ap-northeast-2';
 const s3 = new AWS.S3({ accessKeyId: ID, secretAccessKey: SECRET, region: MYREGION });
 
@@ -23,7 +26,7 @@ app.get('/list', (req, res) => {
     Delimiter: '/',
     Prefix: 'uploadedFiles/',
   };
-  s3.listObjects(params, function (err, data) {
+  s3.listObjectsV2(params, function (err, data) {
     if (err) throw err;
     // res.json(data.Contents);
     res.writeHead(200);
@@ -73,5 +76,7 @@ app.get('/list', (req, res) => {
     res.end(template);
 });
 });
+
+
 
 module.exports = app;
