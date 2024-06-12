@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: weathers
+  labels:
+    app: weathers
+spec:
+  replicas: 1 # three pod
+  selector:
+    matchLabels:
+      app: weathers
+  template:
+    metadata:
+      labels:
+        app: weathers
+    spec:
+      containers:
+        - name: weathers
+          image: absolutelydawn/weathers
+          ports:
+            - containerPort: 8000 # Container port(pod port)
