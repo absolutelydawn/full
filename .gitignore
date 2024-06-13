@@ -29,7 +29,7 @@ conf/*
 conf/pool.js
 
 ## python venv 
-**/.venv
+/**/.venv
 **/__pycache__/
 **/secret.json
 
@@ -41,3 +41,8 @@ conf/pool.js
 **/uploadedFiles
 
 **/swagger
+
+# finetuning
+/**/tsukuyomi.jsonl
+/**/tsukuyomi.csv
+/**/tsukuyomi_new.jsonl
